@@ -9,8 +9,8 @@ TOKEN = os.getenv("TOKEN")
 @bot.tree.command(name="TEST1",desciption="MZAR TEST1")
 async def test(interaction: discord.Interaction):
     channel = interaction.channel
-        user = interaction.user
-            await interaction.response.send_message(f"{user.mention} Selam!")
+    user = interaction.user
+    await interaction.response.send_message(f"{user.mention} Selam!")
 
 
 
